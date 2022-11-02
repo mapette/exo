@@ -4,9 +4,9 @@ def testMoyenne():
     b = 5
     result = moy.moyenne(a,b)
     if result!=3:
-        print('Test échoué')
+        return False
     else:
-        print('Test réussi')
+        return True
 
 
-testMoyenne()
+testMoyenne() == True
