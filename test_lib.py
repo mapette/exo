@@ -6,4 +6,4 @@ def test_moyenne():
     result = moyenne(data)
 
 
-    assert result == 0
+    assert result == 1

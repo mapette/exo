@@ -11,7 +11,6 @@ jobs:
       - run: pytest test_lib.py
       - name: test log after action
         uses: actions/upload-artifact@v3
-        if: success() == false
         with:
           name: loggin-test
           path: logs.txt
