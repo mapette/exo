@@ -10,7 +10,7 @@ jobs:
       - run: pip3 install pytest
       - run: pytest test_lib.py
       - name: test log after action
-          uses: actions/upload-artifact@v3
-          with:
-            name: loggin-test
-            path: log.txt
+        uses: actions/upload-artifact@v3
+        with:
+          name: loggin-test
+          path: log.txt
