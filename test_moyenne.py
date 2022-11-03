@@ -6,6 +6,4 @@ def testMoyenne():
     if result!=3:
         exit(1)
 
-
-
 testMoyenne() == True
