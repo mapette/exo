@@ -13,7 +13,7 @@ jobs:
         uses: actions/upload-artifact@v3
         if: success() == false
         with:
-          name: loggin-test
+          name: loggin-test-result
           path: logs.txt
 
   Explore-GitHub-Actions:
