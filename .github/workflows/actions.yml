@@ -11,6 +11,16 @@ jobs:
       - run: pytest test_lib.py
       - name: test log after action
         uses: actions/upload-artifact@v3
+        if: success() == false
         with:
           name: loggin-test
           path: logs.txt
+
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+
