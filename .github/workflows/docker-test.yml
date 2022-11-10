@@ -1,0 +1,8 @@
+name: Docker tests
+on: [push]
+jobs:
+  Docker-tests:
+    runs-on: ubuntu-latest
+    steps:
+       - run: docker -v
+       
