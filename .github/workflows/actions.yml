@@ -16,7 +16,7 @@ jobs:
           name: loggin-test-result
           path: logs.txt
 
-  Explore-GitHub-Actions:
+  EGA:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
