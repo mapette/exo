@@ -4,6 +4,7 @@ jobs:
   Docker-tests:
     runs-on: ubuntu-latest
     steps:
-       - run: docker -v
-       - run: docker build -t test-image .
+      - uses: actions/checkout@v3
+      - run: docker -v
+      - run: docker build -t test-image .
        
